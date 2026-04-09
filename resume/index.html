@@ -5,308 +5,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume – Gilad Segal</title>
     <link rel="stylesheet" href="../style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
-        /* ── Dark theme override ── */
-        body {
-            background: #07090f;
-            color: #c8d0e4;
-            font-family: 'DM Sans', system-ui, sans-serif;
-        }
-
-        nav {
-            background-color: #0c0f1c;
-            border-bottom-color: #161d35;
-        }
-
-        nav a {
-            color: #616d90;
-        }
-
-        nav a.current {
-            color: #c8d0e4;
-            border-bottom-color: oklch(65% 35% 250);
-        }
-
-        nav a:hover {
-            background-color: #111526;
-            border-bottom-color: oklch(65% 35% 250);
-            color: #c8d0e4;
-        }
-
-        /* ── Container ── */
         .resume {
             max-width: 860px;
-            margin: 0 auto 5rem;
-            padding: 0;
+            margin: 2rem auto;
         }
 
-        /* ── HEADER ── */
+        /* ── Header ── */
         .resume-header {
-            position: relative;
-            padding: 3.75rem 3rem 3rem;
-            margin-bottom: 0;
-            overflow: hidden;
-            background: linear-gradient(155deg, #0d1628 0%, #080c18 60%, #070910 100%);
-            border-bottom: 1px solid #151e38;
-        }
-
-        /* Dot-grid texture */
-        .resume-header::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background-image: radial-gradient(circle, #1a2545 1.5px, transparent 1.5px);
-            background-size: 26px 26px;
-            opacity: 0.45;
-            pointer-events: none;
-        }
-
-        /* Radial glow orb */
-        .resume-header::after {
-            content: '';
-            position: absolute;
-            top: -100px;
-            right: -100px;
-            width: 480px;
-            height: 480px;
-            background: radial-gradient(circle, oklch(65% 35% 250 / 0.14), transparent 65%);
-            pointer-events: none;
-        }
-
-        .resume-header-inner {
-            position: relative;
-            z-index: 1;
-        }
-
-        .resume-header .eyebrow {
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 0.68rem;
-            letter-spacing: 0.22em;
-            text-transform: uppercase;
-            color: oklch(65% 35% 250 / 0.75);
-            margin-bottom: 0.6rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            flex-wrap: wrap;
+            gap: 0.5rem 2rem;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid var(--color-accent);
         }
 
         .resume-header h1 {
-            font-family: 'Bebas Neue', sans-serif;
-            font-size: clamp(4rem, 9vw, 6.5rem);
-            font-weight: 400;
-            letter-spacing: 0.04em;
-            line-height: 0.92;
-            color: #eef1fc;
-            margin: 0 0 1.75rem;
-            text-shadow: 0 0 80px oklch(65% 35% 250 / 0.25);
+            margin: 0;
+            font-size: 2.5rem;
+            line-height: 1;
         }
 
         .resume-header .contact-info {
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 0.775rem;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem 2.25rem;
-            color: #5c6a8a;
+            font-size: 0.875rem;
+            text-align: right;
+            color: oklch(45% 5% 250);
+            line-height: 1.8;
         }
 
         .resume-header .contact-info a {
-            color: oklch(65% 35% 250);
+            color: var(--color-accent);
             text-decoration: none;
-            transition: color 0.2s;
         }
 
         .resume-header .contact-info a:hover {
-            color: #eef1fc;
+            text-decoration: underline;
         }
 
-        .c-item::before {
-            content: '↗ ';
-            color: oklch(65% 35% 250 / 0.45);
-        }
-
-        /* ── SECTIONS ── */
+        /* ── Sections ── */
         .resume section {
-            padding: 2.25rem 3rem 0;
-            animation: rise 0.55s ease both;
-        }
-
-        .resume section:nth-of-type(1) { animation-delay: 0.08s; }
-        .resume section:nth-of-type(2) { animation-delay: 0.16s; }
-        .resume section:nth-of-type(3) { animation-delay: 0.24s; }
-
-        @keyframes rise {
-            from { opacity: 0; transform: translateY(18px); }
-            to   { opacity: 1; transform: translateY(0); }
+            margin-bottom: 2rem;
         }
 
         .resume section h2 {
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 0.63rem;
-            font-weight: 500;
+            font-size: 0.7rem;
             text-transform: uppercase;
-            letter-spacing: 0.26em;
-            color: oklch(65% 35% 250);
-            margin-bottom: 1.6rem;
-            padding-bottom: 0.7rem;
-            border-bottom: 1px solid #141c30;
-            display: flex;
-            align-items: center;
-            gap: 0.8rem;
+            letter-spacing: 0.14em;
+            color: var(--color-accent);
+            padding-bottom: 0.4rem;
+            margin-bottom: 1.1rem;
+            border-bottom: 1px solid oklch(from var(--color-accent) 85% 15% h);
         }
 
-        .resume section h2::before {
-            content: '//';
-            opacity: 0.35;
-            font-weight: 300;
-            letter-spacing: 0;
-        }
-
-        .resume section h2::after {
-            content: '';
-            flex: 1;
-            height: 1px;
-            background: linear-gradient(to right, #141c30 20%, transparent);
-        }
-
-        /* ── ENTRIES ── */
+        /* ── Entries ── */
         .resume-entry {
-            position: relative;
-            margin-bottom: 2.1rem;
-            padding-left: 1.6rem;
-        }
-
-        /* Vertical connector line */
-        .resume-entry::before {
-            content: '';
-            position: absolute;
-            left: 3px;
-            top: 14px;
-            bottom: -1.4rem;
-            width: 1px;
-            background: linear-gradient(to bottom, oklch(65% 35% 250 / 0.4), transparent);
-        }
-
-        .resume-entry:last-child::before {
-            display: none;
-        }
-
-        /* Diamond marker */
-        .resume-entry::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 8px;
-            width: 7px;
-            height: 7px;
-            background: oklch(65% 35% 250);
-            transform: rotate(45deg);
-            box-shadow: 0 0 10px oklch(65% 35% 250 / 0.55), 0 0 20px oklch(65% 35% 250 / 0.2);
+            margin-bottom: 1.4rem;
+            padding-left: 1rem;
+            border-left: 2px solid oklch(from var(--color-accent) 88% 12% h);
         }
 
         .resume-entry-header {
             display: flex;
             justify-content: space-between;
-            align-items: flex-start;
+            align-items: baseline;
             flex-wrap: wrap;
             gap: 0.25rem 1rem;
-            margin-bottom: 0.2rem;
         }
 
         .resume-entry-header .org {
-            font-weight: 500;
-            font-size: 0.975rem;
-            color: #dde3f5;
-            letter-spacing: 0.01em;
+            font-weight: 600;
         }
 
         .resume-entry-header .date {
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 0.68rem;
-            color: oklch(65% 35% 250);
-            background: oklch(65% 35% 250 / 0.07);
-            border: 1px solid oklch(65% 35% 250 / 0.18);
-            padding: 0.15em 0.65em;
-            border-radius: 2px;
+            font-size: 0.8rem;
+            color: oklch(50% 10% 250);
             white-space: nowrap;
-            letter-spacing: 0.04em;
-            flex-shrink: 0;
         }
 
         .resume-entry .role {
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 0.73rem;
-            font-weight: 300;
+            font-size: 0.875rem;
             font-style: italic;
-            color: #3e4e72;
-            margin: 0.25rem 0 0.65rem;
-            letter-spacing: 0.02em;
+            color: oklch(45% 15% 250);
+            margin: 0.15rem 0 0.5rem;
         }
 
         .resume-entry ul {
-            margin: 0;
+            margin: 0.4rem 0 0 1.1rem;
             padding: 0;
-            list-style: none;
         }
 
         .resume-entry ul li {
-            position: relative;
-            padding-left: 1.1rem;
-            margin-bottom: 0.42rem;
-            font-size: 0.875rem;
-            color: #6a7898;
-            line-height: 1.65;
+            margin-bottom: 0.3rem;
+            font-size: 0.9rem;
         }
 
-        .resume-entry ul li::before {
-            content: '▸';
-            position: absolute;
-            left: 0;
-            color: oklch(65% 35% 250 / 0.45);
-            font-size: 0.65em;
-            top: 0.22em;
-        }
-
-        /* ── SKILLS ── */
+        /* ── Skills ── */
         .skills-list {
             list-style: none;
             margin: 0;
             padding: 0;
             display: grid;
-            gap: 0.85rem;
+            gap: 0.5rem;
         }
 
         .skills-list li {
+            font-size: 0.9rem;
             display: flex;
-            gap: 1.25rem;
-            align-items: baseline;
-            font-size: 0.875rem;
-            color: #6a7898;
-            line-height: 1.55;
+            gap: 0.75rem;
         }
 
         .skills-list li strong {
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 0.62rem;
-            font-weight: 500;
+            font-size: 0.75rem;
             text-transform: uppercase;
-            letter-spacing: 0.14em;
-            color: oklch(65% 35% 250 / 0.65);
-            min-width: 8.5rem;
-            padding-top: 0.1em;
+            letter-spacing: 0.08em;
+            color: oklch(50% 15% 250);
+            min-width: 8rem;
+            padding-top: 0.15em;
             flex-shrink: 0;
-        }
-
-        /* ── Footer spacer ── */
-        .resume-footer-line {
-            margin: 2.5rem 3rem 0;
-            border: none;
-            border-top: 1px solid #101525;
-            padding-top: 1.25rem;
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 0.63rem;
-            color: #2a3450;
-            letter-spacing: 0.1em;
         }
     </style>
 </head>
@@ -322,14 +140,11 @@
     <div class="resume">
 
         <div class="resume-header">
-            <div class="resume-header-inner">
-                <p class="eyebrow">Portfolio / Resume</p>
-                <h1>Gilad<br>Segal</h1>
-                <div class="contact-info">
-                    <span class="c-item"><a href="mailto:yalig777@gmail.com">yalig777@gmail.com</a></span>
-                    <span class="c-item">+1 – 415 – 827 – 9890</span>
-                    <span class="c-item"><a href="https://www.linkedin.com/in/giladsegal" target="_blank">LinkedIn Profile</a></span>
-                </div>
+            <h1>Gilad Segal</h1>
+            <div class="contact-info">
+                <a href="mailto:yalig777@gmail.com">yalig777@gmail.com</a><br>
+                +1 – 415 – 827 – 9890<br>
+                <a href="https://www.linkedin.com/in/giladsegal" target="_blank">LinkedIn Profile</a>
             </div>
         </div>
 
@@ -341,13 +156,13 @@
                     <span class="org">University of California, San Diego</span>
                     <span class="date">June 2026</span>
                 </div>
-                <p class="role">BS, Business Economics — Minor in Data Science</p>
+                <p class="role">BS, Business Economics &mdash; Minor in Data Science</p>
             </div>
 
             <div class="resume-entry">
                 <div class="resume-entry-header">
                     <span class="org">College of Marin</span>
-                    <span class="date">Aug 2022 – Jun 2024</span>
+                    <span class="date">August 2022 – June 2024</span>
                 </div>
                 <p class="role">Associate for Transfer in Business Administration</p>
             </div>
@@ -359,7 +174,7 @@
             <div class="resume-entry">
                 <div class="resume-entry-header">
                     <span class="org">Department of Defense – i4NS Academic Internship</span>
-                    <span class="date">Jan 2025 – Jun 2025</span>
+                    <span class="date">January 2025 – June 2025</span>
                 </div>
                 <p class="role">Business Strategy Analyst; UCSD Partnership Program</p>
                 <ul>
@@ -372,7 +187,7 @@
             <div class="resume-entry">
                 <div class="resume-entry-header">
                     <span class="org">Segal Telepsychiatry Network</span>
-                    <span class="date">Aug 2023 – Present</span>
+                    <span class="date">August 2023 – Present</span>
                 </div>
                 <p class="role">Business Development; Mill Valley, California</p>
                 <ul>
@@ -389,7 +204,7 @@
             <div class="resume-entry">
                 <div class="resume-entry-header">
                     <span class="org">Tamid</span>
-                    <span class="date">Sep 2024 – Present</span>
+                    <span class="date">September 2024 – Present</span>
                 </div>
                 <p class="role">Director of Fund; UCSD Club</p>
                 <ul>
@@ -404,7 +219,7 @@
             <div class="resume-entry">
                 <div class="resume-entry-header">
                     <span class="org">Independent Quant Trader – Options &amp; Crypto Markets</span>
-                    <span class="date">Apr 2020 – Dec 2024</span>
+                    <span class="date">April 2020 – December 2024</span>
                 </div>
                 <ul>
                     <li>Built an automated trading algorithm in QuantConnect to execute multi-leg options spread strategies.</li>
@@ -423,8 +238,6 @@
                 <li><strong>Hobbies</strong> Guitar, DJing, Traveling, Reading, Cooking, Calisthenics</li>
             </ul>
         </section>
-
-        <p class="resume-footer-line">// end of document</p>
 
     </div>
 </body>
