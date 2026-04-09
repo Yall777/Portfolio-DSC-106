@@ -12,7 +12,9 @@
             align-items: flex-end;
             flex-wrap: wrap;
             gap: 0.5rem 2rem;
-            margin-bottom: 2rem;
+            padding-bottom: 1.25rem;
+            margin-bottom: 2.5rem;
+            border-bottom: 3px solid var(--color-accent);
         }
 
         .resume-header h1 {
@@ -21,11 +23,13 @@
 
         .resume-header .contact-info {
             text-align: right;
-            line-height: 1.8;
+            line-height: 1.9;
+            font-size: 0.9rem;
+            color: oklch(45% 5% 250);
         }
 
         .resume-header .contact-info a {
-            color: inherit;
+            color: var(--color-accent);
             text-decoration: none;
         }
 
@@ -34,11 +38,23 @@
         }
 
         section {
-            margin-bottom: 2rem;
+            margin-bottom: 2.25rem;
+        }
+
+        section h2 {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--color-accent);
+            border-bottom: 1px solid oklch(from var(--color-accent) 88% 12% h);
+            padding-bottom: 0.4rem;
+            margin-bottom: 1.25rem;
         }
 
         .resume-entry {
-            margin-bottom: 1.25rem;
+            margin-bottom: 1.4rem;
+            padding-left: 0.9rem;
+            border-left: 3px solid oklch(from var(--color-accent) 88% 12% h);
         }
 
         .resume-entry-header {
@@ -53,9 +69,15 @@
             font-weight: bold;
         }
 
+        .resume-entry-header .date {
+            font-size: 0.85rem;
+            color: oklch(50% 10% 250);
+        }
+
         .resume-entry .role {
             font-style: italic;
-            margin: 0.1rem 0 0.4rem;
+            color: oklch(45% 15% 250);
+            margin: 0.15rem 0 0.5rem;
         }
 
         .resume-entry ul {
@@ -74,7 +96,11 @@
         }
 
         .skills-list li {
-            margin-bottom: 0.35rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .skills-list li strong {
+            color: var(--color-accent);
         }
     </style>
 </head>
@@ -102,7 +128,7 @@
         <div class="resume-entry">
             <div class="resume-entry-header">
                 <span class="org">University of California, San Diego</span>
-                <span>June 2026</span>
+                <span class="date">June 2026</span>
             </div>
             <p class="role">BS, Business Economics &mdash; Minor in Data Science</p>
         </div>
@@ -110,7 +136,7 @@
         <div class="resume-entry">
             <div class="resume-entry-header">
                 <span class="org">College of Marin</span>
-                <span>August 2022 – June 2024</span>
+                <span class="date">August 2022 – June 2024</span>
             </div>
             <p class="role">Associate for Transfer in Business Administration</p>
         </div>
@@ -122,7 +148,7 @@
         <div class="resume-entry">
             <div class="resume-entry-header">
                 <span class="org">Department of Defense – i4NS Academic Internship</span>
-                <span>January 2025 – June 2025</span>
+                <span class="date">January 2025 – June 2025</span>
             </div>
             <p class="role">Business Strategy Analyst; UCSD Partnership Program</p>
             <ul>
@@ -135,7 +161,7 @@
         <div class="resume-entry">
             <div class="resume-entry-header">
                 <span class="org">Segal Telepsychiatry Network</span>
-                <span>August 2023 – Present</span>
+                <span class="date">August 2023 – Present</span>
             </div>
             <p class="role">Business Development; Mill Valley, California</p>
             <ul>
@@ -152,7 +178,7 @@
         <div class="resume-entry">
             <div class="resume-entry-header">
                 <span class="org">Tamid</span>
-                <span>September 2024 – Present</span>
+                <span class="date">September 2024 – Present</span>
             </div>
             <p class="role">Director of Fund; UCSD Club</p>
             <ul>
@@ -167,7 +193,7 @@
         <div class="resume-entry">
             <div class="resume-entry-header">
                 <span class="org">Independent Quant Trader – Options &amp; Crypto Markets</span>
-                <span>April 2020 – December 2024</span>
+                <span class="date">April 2020 – December 2024</span>
             </div>
             <ul>
                 <li>Built an automated trading algorithm in QuantConnect to execute multi-leg options spread strategies.</li>
