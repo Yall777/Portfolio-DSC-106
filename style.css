@@ -37,6 +37,37 @@ nav a:hover {
   background-color: oklch(from var(--color-accent) 90% 10% h);
 }
 
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: 400%;
+}
+
+/* Projects grid */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+  gap: 1em;
+}
+
+.projects article {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+}
+
+.projects article h2 {
+  margin: 0;
+}
+
+.projects article img {
+  width: 100%;
+}
+
 /* Contact form */
 form {
   display: grid;
