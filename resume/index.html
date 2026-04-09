@@ -6,38 +6,26 @@
     <title>Resume – Gilad Segal</title>
     <link rel="stylesheet" href="../style.css">
     <style>
-        .resume {
-            max-width: 860px;
-            margin: 2rem auto;
-        }
-
-        /* ── Header ── */
         .resume-header {
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
             flex-wrap: wrap;
             gap: 0.5rem 2rem;
-            padding-bottom: 1rem;
             margin-bottom: 2rem;
-            border-bottom: 2px solid var(--color-accent);
         }
 
         .resume-header h1 {
             margin: 0;
-            font-size: 2.5rem;
-            line-height: 1;
         }
 
         .resume-header .contact-info {
-            font-size: 0.875rem;
             text-align: right;
-            color: oklch(45% 5% 250);
             line-height: 1.8;
         }
 
         .resume-header .contact-info a {
-            color: var(--color-accent);
+            color: inherit;
             text-decoration: none;
         }
 
@@ -45,26 +33,12 @@
             text-decoration: underline;
         }
 
-        /* ── Sections ── */
-        .resume section {
+        section {
             margin-bottom: 2rem;
         }
 
-        .resume section h2 {
-            font-size: 0.7rem;
-            text-transform: uppercase;
-            letter-spacing: 0.14em;
-            color: var(--color-accent);
-            padding-bottom: 0.4rem;
-            margin-bottom: 1.1rem;
-            border-bottom: 1px solid oklch(from var(--color-accent) 85% 15% h);
-        }
-
-        /* ── Entries ── */
         .resume-entry {
-            margin-bottom: 1.4rem;
-            padding-left: 1rem;
-            border-left: 2px solid oklch(from var(--color-accent) 88% 12% h);
+            margin-bottom: 1.25rem;
         }
 
         .resume-entry-header {
@@ -76,55 +50,31 @@
         }
 
         .resume-entry-header .org {
-            font-weight: 600;
-        }
-
-        .resume-entry-header .date {
-            font-size: 0.8rem;
-            color: oklch(50% 10% 250);
-            white-space: nowrap;
+            font-weight: bold;
         }
 
         .resume-entry .role {
-            font-size: 0.875rem;
             font-style: italic;
-            color: oklch(45% 15% 250);
-            margin: 0.15rem 0 0.5rem;
+            margin: 0.1rem 0 0.4rem;
         }
 
         .resume-entry ul {
-            margin: 0.4rem 0 0 1.1rem;
+            margin: 0.4rem 0 0 1.25rem;
             padding: 0;
         }
 
         .resume-entry ul li {
             margin-bottom: 0.3rem;
-            font-size: 0.9rem;
         }
 
-        /* ── Skills ── */
         .skills-list {
             list-style: none;
             margin: 0;
             padding: 0;
-            display: grid;
-            gap: 0.5rem;
         }
 
         .skills-list li {
-            font-size: 0.9rem;
-            display: flex;
-            gap: 0.75rem;
-        }
-
-        .skills-list li strong {
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-            color: oklch(50% 15% 250);
-            min-width: 8rem;
-            padding-top: 0.15em;
-            flex-shrink: 0;
+            margin-bottom: 0.35rem;
         }
     </style>
 </head>
@@ -137,108 +87,105 @@
         <a href="https://github.com/Yall777/Portfolio-DSC-106" target="_blank">GitHub</a>
     </nav>
 
-    <div class="resume">
+    <div class="resume-header">
+        <h1>Gilad Segal</h1>
+        <div class="contact-info">
+            <a href="mailto:yalig777@gmail.com">yalig777@gmail.com</a><br>
+            +1 – 415 – 827 – 9890<br>
+            <a href="https://www.linkedin.com/in/giladsegal" target="_blank">LinkedIn Profile</a>
+        </div>
+    </div>
 
-        <div class="resume-header">
-            <h1>Gilad Segal</h1>
-            <div class="contact-info">
-                <a href="mailto:yalig777@gmail.com">yalig777@gmail.com</a><br>
-                +1 – 415 – 827 – 9890<br>
-                <a href="https://www.linkedin.com/in/giladsegal" target="_blank">LinkedIn Profile</a>
+    <section>
+        <h2>Education</h2>
+
+        <div class="resume-entry">
+            <div class="resume-entry-header">
+                <span class="org">University of California, San Diego</span>
+                <span>June 2026</span>
             </div>
+            <p class="role">BS, Business Economics &mdash; Minor in Data Science</p>
         </div>
 
-        <section>
-            <h2>Education</h2>
-
-            <div class="resume-entry">
-                <div class="resume-entry-header">
-                    <span class="org">University of California, San Diego</span>
-                    <span class="date">June 2026</span>
-                </div>
-                <p class="role">BS, Business Economics &mdash; Minor in Data Science</p>
+        <div class="resume-entry">
+            <div class="resume-entry-header">
+                <span class="org">College of Marin</span>
+                <span>August 2022 – June 2024</span>
             </div>
+            <p class="role">Associate for Transfer in Business Administration</p>
+        </div>
+    </section>
 
-            <div class="resume-entry">
-                <div class="resume-entry-header">
-                    <span class="org">College of Marin</span>
-                    <span class="date">August 2022 – June 2024</span>
-                </div>
-                <p class="role">Associate for Transfer in Business Administration</p>
+    <section>
+        <h2>Experience</h2>
+
+        <div class="resume-entry">
+            <div class="resume-entry-header">
+                <span class="org">Department of Defense – i4NS Academic Internship</span>
+                <span>January 2025 – June 2025</span>
             </div>
-        </section>
-
-        <section>
-            <h2>Experience</h2>
-
-            <div class="resume-entry">
-                <div class="resume-entry-header">
-                    <span class="org">Department of Defense – i4NS Academic Internship</span>
-                    <span class="date">January 2025 – June 2025</span>
-                </div>
-                <p class="role">Business Strategy Analyst; UCSD Partnership Program</p>
-                <ul>
-                    <li>Collaborated with the U.S. Air Force Civil Engineer team to assess mission-critical energy infrastructure at the 911th Airlift Wing, identifying solutions projected to save 14,400+ man-hours.</li>
-                    <li>Conducted financial and operational analyses to evaluate renewable energy and grid modernization options, identifying $220K in projected ROI.</li>
-                    <li>Delivered a comprehensive recommendation report and presentation to Department of Defense officials, proposing an optimized electrification strategy to enhance base reliability and cost-efficiency.</li>
-                </ul>
-            </div>
-
-            <div class="resume-entry">
-                <div class="resume-entry-header">
-                    <span class="org">Segal Telepsychiatry Network</span>
-                    <span class="date">August 2023 – Present</span>
-                </div>
-                <p class="role">Business Development; Mill Valley, California</p>
-                <ul>
-                    <li>Built an AI-powered KPI dashboard to automate financial reporting and generate data-driven insights, optimizing marketing strategies.</li>
-                    <li>Led the redesign of the company website, improving user experience and engagement through compelling content creation and effective Google Ads campaigns, achieving a 25% patient retention rate.</li>
-                    <li>Integrated AI-driven solutions to enhance the customer journey and streamline operations, resulting in over 500 patient interactions with chatbots.</li>
-                    <li>Conducted market research and client experience evaluations, increasing referrals by 5% via targeted outreach.</li>
-                    <li>Collaborated with third-parties to incorporate customer feedback into marketing strategies, driving improvements in brand positioning.</li>
-                    <li>Onboarded and managed a marketing agency partnership to expand reach across California, New York, and Florida.</li>
-                    <li>Designed and executed a cold-email outreach campaign targeting 1,000+ clinics, generating new B2B partnerships and referral leads.</li>
-                </ul>
-            </div>
-
-            <div class="resume-entry">
-                <div class="resume-entry-header">
-                    <span class="org">Tamid</span>
-                    <span class="date">September 2024 – Present</span>
-                </div>
-                <p class="role">Director of Fund; UCSD Club</p>
-                <ul>
-                    <li>Built DCF models and conducted valuation analysis of public companies in AI, fintech, and consumer sectors.</li>
-                    <li>Led investment research and fund strategy for a student-managed portfolio; presented pitches to advisory committee.</li>
-                    <li>Mentored students on financial modeling, equity research, and valuation fundamentals.</li>
-                    <li>Created interactive learning modules such as stock pitch competitions, quizzes, and sector analysis challenges.</li>
-                    <li>Spearheaded the development of a proprietary stock analysis app that enhanced the club's research efficiency and analytical accuracy.</li>
-                </ul>
-            </div>
-
-            <div class="resume-entry">
-                <div class="resume-entry-header">
-                    <span class="org">Independent Quant Trader – Options &amp; Crypto Markets</span>
-                    <span class="date">April 2020 – December 2024</span>
-                </div>
-                <ul>
-                    <li>Built an automated trading algorithm in QuantConnect to execute multi-leg options spread strategies.</li>
-                    <li>Programmed a stock screener in R to filter equities by earnings trends, beta, and valuation metrics.</li>
-                    <li>Designed Excel-based tools to track trading performance, risk exposure, and asset diversification.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section>
-            <h2>Skills</h2>
-            <ul class="skills-list">
-                <li><strong>Computer / Business</strong> Microsoft Suite, Google Ads, Python, R, Financial Analysis, Performance Tracking, Market Research, Data Collection</li>
-                <li><strong>Coursework</strong> Econometrics, Microeconomics, Macroeconomics, Negotiations, Business Finance, Accounting</li>
-                <li><strong>Languages</strong> English, Russian</li>
-                <li><strong>Hobbies</strong> Guitar, DJing, Traveling, Reading, Cooking, Calisthenics</li>
+            <p class="role">Business Strategy Analyst; UCSD Partnership Program</p>
+            <ul>
+                <li>Collaborated with the U.S. Air Force Civil Engineer team to assess mission-critical energy infrastructure at the 911th Airlift Wing, identifying solutions projected to save 14,400+ man-hours.</li>
+                <li>Conducted financial and operational analyses to evaluate renewable energy and grid modernization options, identifying $220K in projected ROI.</li>
+                <li>Delivered a comprehensive recommendation report and presentation to Department of Defense officials, proposing an optimized electrification strategy to enhance base reliability and cost-efficiency.</li>
             </ul>
-        </section>
+        </div>
 
-    </div>
+        <div class="resume-entry">
+            <div class="resume-entry-header">
+                <span class="org">Segal Telepsychiatry Network</span>
+                <span>August 2023 – Present</span>
+            </div>
+            <p class="role">Business Development; Mill Valley, California</p>
+            <ul>
+                <li>Built an AI-powered KPI dashboard to automate financial reporting and generate data-driven insights, optimizing marketing strategies.</li>
+                <li>Led the redesign of the company website, improving user experience and engagement through compelling content creation and effective Google Ads campaigns, achieving a 25% patient retention rate.</li>
+                <li>Integrated AI-driven solutions to enhance the customer journey and streamline operations, resulting in over 500 patient interactions with chatbots.</li>
+                <li>Conducted market research and client experience evaluations, increasing referrals by 5% via targeted outreach.</li>
+                <li>Collaborated with third-parties to incorporate customer feedback into marketing strategies, driving improvements in brand positioning.</li>
+                <li>Onboarded and managed a marketing agency partnership to expand reach across California, New York, and Florida.</li>
+                <li>Designed and executed a cold-email outreach campaign targeting 1,000+ clinics, generating new B2B partnerships and referral leads.</li>
+            </ul>
+        </div>
+
+        <div class="resume-entry">
+            <div class="resume-entry-header">
+                <span class="org">Tamid</span>
+                <span>September 2024 – Present</span>
+            </div>
+            <p class="role">Director of Fund; UCSD Club</p>
+            <ul>
+                <li>Built DCF models and conducted valuation analysis of public companies in AI, fintech, and consumer sectors.</li>
+                <li>Led investment research and fund strategy for a student-managed portfolio; presented pitches to advisory committee.</li>
+                <li>Mentored students on financial modeling, equity research, and valuation fundamentals.</li>
+                <li>Created interactive learning modules such as stock pitch competitions, quizzes, and sector analysis challenges.</li>
+                <li>Spearheaded the development of a proprietary stock analysis app that enhanced the club's research efficiency and analytical accuracy.</li>
+            </ul>
+        </div>
+
+        <div class="resume-entry">
+            <div class="resume-entry-header">
+                <span class="org">Independent Quant Trader – Options &amp; Crypto Markets</span>
+                <span>April 2020 – December 2024</span>
+            </div>
+            <ul>
+                <li>Built an automated trading algorithm in QuantConnect to execute multi-leg options spread strategies.</li>
+                <li>Programmed a stock screener in R to filter equities by earnings trends, beta, and valuation metrics.</li>
+                <li>Designed Excel-based tools to track trading performance, risk exposure, and asset diversification.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li><strong>Computer / Business:</strong> Microsoft Suite, Google Ads, Python, R, Financial Analysis, Performance Tracking, Market Research, Data Collection</li>
+            <li><strong>Coursework:</strong> Econometrics, Microeconomics, Macroeconomics, Negotiations, Business Finance, Accounting</li>
+            <li><strong>Languages:</strong> English, Russian</li>
+            <li><strong>Hobbies:</strong> Guitar, DJing, Traveling, Reading, Cooking, Calisthenics</li>
+        </ul>
+    </section>
+
 </body>
 </html>
