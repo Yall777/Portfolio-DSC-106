@@ -2,19 +2,25 @@
   --color-accent: oklch(70% 30% 250);
 }
 
+html {
+  color-scheme: light dark;
+}
+
 body {
   font: 100%/1.5 system-ui;
   max-width: 100ch;
   margin-inline: auto;
   padding: 1rem 2rem;
   accent-color: var(--color-accent);
+  position: relative;
 }
 
 nav {
+  --border-color: oklch(50% 10% 200 / 40%);
   display: flex;
   margin-bottom: 1rem;
-  border-bottom: 1px solid oklch(80% 3% 200);
-  background-color: oklch(from var(--color-accent) 95% 5% h);
+  border-bottom: 1px solid var(--border-color);
+  background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
 }
 
 nav a {
@@ -27,7 +33,7 @@ nav a {
 
 nav a.current {
   font-weight: bold;
-  border-bottom: 0.4em solid oklch(80% 3% 200);
+  border-bottom: 0.4em solid var(--border-color);
   padding-bottom: 0.1em;
 }
 
@@ -82,7 +88,15 @@ label {
   align-items: center;
 }
 
-input, textarea, button {
+.color-scheme {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 80%;
+  font-family: inherit;
+}
+
+input, select, textarea, button {
   font: inherit;
   width: 100%;
   box-sizing: border-box;

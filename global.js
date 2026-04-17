@@ -16,6 +16,33 @@ let pages = [
   { url: 'https://github.com/Yall777/Portfolio-DSC-106', title: 'GitHub' },
 ];
 
+document.body.insertAdjacentHTML('afterbegin', `
+  <label class="color-scheme">
+    Theme:
+    <select>
+      <option value="light dark">Automatic</option>
+      <option value="light">Light</option>
+      <option value="dark">Dark</option>
+    </select>
+  </label>
+`);
+
+const select = document.querySelector('.color-scheme select');
+
+function setColorScheme(colorScheme) {
+  document.documentElement.style.setProperty('color-scheme', colorScheme);
+  select.value = colorScheme;
+}
+
+if ('colorScheme' in localStorage) {
+  setColorScheme(localStorage.colorScheme);
+}
+
+select.addEventListener('input', function (event) {
+  localStorage.colorScheme = event.target.value;
+  setColorScheme(event.target.value);
+});
+
 let nav = document.createElement('nav');
 document.body.prepend(nav);
 
