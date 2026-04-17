@@ -12,7 +12,6 @@ body {
   margin-inline: auto;
   padding: 1rem 2rem;
   accent-color: var(--color-accent);
-  position: relative;
 }
 
 nav {
@@ -89,7 +88,7 @@ label {
 }
 
 .color-scheme {
-  position: absolute;
+  position: fixed;
   top: 1rem;
   right: 1rem;
   font-size: 80%;

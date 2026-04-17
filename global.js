@@ -43,6 +43,18 @@ select.addEventListener('input', function (event) {
   setColorScheme(event.target.value);
 });
 
+const form = document.querySelector('form');
+form?.addEventListener('submit', function (event) {
+  event.preventDefault();
+  const data = new FormData(form);
+  let url = form.action + '?';
+  for (let [name, value] of data) {
+    url += `${name}=${encodeURIComponent(value)}&`;
+  }
+  url = url.slice(0, -1);
+  location.href = url;
+});
+
 let nav = document.createElement('nav');
 document.body.prepend(nav);
 
