@@ -10,7 +10,7 @@ const BASE_PATH = (location.hostname === "localhost" || location.hostname === "1
 
 let pages = [
   { url: '', title: 'Home' },
-  { url: 'projects/', title: 'Projects' },
+  { url: 'Projects/', title: 'Projects' },
   { url: 'resume/', title: 'Resume' },
   { url: 'contact/', title: 'Contact' },
   { url: 'https://github.com/Yall777/Portfolio-DSC-106', title: 'GitHub' },
