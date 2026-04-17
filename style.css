@@ -95,6 +95,10 @@ label {
   font-family: inherit;
 }
 
+.color-scheme select {
+  width: auto;
+}
+
 input, select, textarea, button {
   font: inherit;
   width: 100%;
