@@ -1,68 +1,75 @@
 [
     {
+        "title": "Project 1 in DSC 106",
+        "image": "../images/dsc106-p1.png",
+        "description": "A data visualization project exploring food processing scores and brand pricing, revealing that less processed does not mean cheaper.",
+        "year": 2025
+    },
+    {
         "title": "Power Outages",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "image": "https://raw.githubusercontent.com/Yall777/Power-Outages/main/assets/Powerlines.jpg",
         "description": "A final project for DSC 80 at UCSD analyzing power outage data.",
-        "url": "https://github.com/Yall777/Power-Outages"
+        "url": "https://github.com/Yall777/Power-Outages",
+        "year": 2025
     },
     {
-        "title": "Lorem ipsum dolor sit",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "title": "Project 2",
+        "image": "../images/project2.jpg",
+        "description": "An exploratory data analysis project examining trends in outdoor lifestyle and activity patterns.",
+        "year": 2025
     },
     {
-        "title": "Consectetur adipiscing elit",
+        "title": "Project 3",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "description": "A statistical analysis of economic indicators across different regions and demographic groups.",
+        "year": 2024
     },
     {
-        "title": "Sed do eiusmod tempor",
+        "title": "Project 4",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        "description": "A machine learning model predicting housing prices using socioeconomic and geographic data.",
+        "year": 2024
     },
     {
-        "title": "Incididunt ut labore dolore",
+        "title": "Project 5",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "description": "An analysis of social media sentiment trends around environmental and climate topics.",
+        "year": 2024
     },
     {
-        "title": "Magna aliqua enim veniam",
+        "title": "Project 6",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam quis nostrud exercitation."
+        "description": "A clustering analysis of consumer purchasing behavior patterns using k-means and hierarchical methods.",
+        "year": 2024
     },
     {
-        "title": "Quis nostrud exercitation ullamco",
+        "title": "Project 7",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam laboris."
+        "description": "Time series forecasting of stock market trends using ARIMA and regression models.",
+        "year": 2023
     },
     {
-        "title": "Laboris nisi aliquip commodo",
+        "title": "Project 8",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        "description": "A natural language processing analysis of news headlines examining framing and bias detection.",
+        "year": 2023
     },
     {
-        "title": "Duis aute irure dolor",
+        "title": "Project 9",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "description": "An interactive dashboard visualizing public health outcomes across US counties over time.",
+        "year": 2023
     },
     {
-        "title": "Voluptate velit esse cillum",
+        "title": "Project 10",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore."
+        "description": "A recommendation system for academic papers built using collaborative filtering techniques.",
+        "year": 2023
     },
     {
-        "title": "Fugiat nulla pariatur excepteur",
+        "title": "Project 11",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo."
-    },
-    {
-        "title": "Sint occaecat cupidatat proident",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-    },
-    {
-        "title": "Officia deserunt mollit anim",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est."
+        "description": "Exploratory analysis of climate data examining long-term temperature trends across decades.",
+        "year": 2023
     }
 ]

@@ -73,6 +73,12 @@ h1 {
   width: 100%;
 }
 
+.project-year {
+  font-size: 0.8em;
+  color: color-mix(in oklch, currentColor, transparent 40%);
+  margin-top: auto;
+}
+
 /* GitHub stats */
 #profile-stats dl {
   display: grid;
