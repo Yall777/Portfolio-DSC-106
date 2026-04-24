@@ -1,5 +1,11 @@
 [
     {
+        "title": "Power Outages",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "A final project for DSC 80 at UCSD analyzing power outage data.",
+        "url": "https://github.com/Yall777/Power-Outages"
+    },
+    {
         "title": "Lorem ipsum dolor sit",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
