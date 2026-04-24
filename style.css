@@ -73,6 +73,27 @@ h1 {
   width: 100%;
 }
 
+/* GitHub stats */
+#profile-stats dl {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#profile-stats dt {
+  grid-row: 1;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: color-mix(in oklch, currentColor, transparent 30%);
+}
+
+#profile-stats dd {
+  grid-row: 2;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin: 0;
+}
+
 /* Contact form */
 form {
   display: grid;

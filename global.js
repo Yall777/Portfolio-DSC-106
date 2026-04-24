@@ -55,6 +55,10 @@ form?.addEventListener('submit', function (event) {
   location.href = url;
 });
 
+export async function fetchGithubData(username) {
+  return fetchJSON(`https://api.github.com/users/${username}`);
+}
+
 export function renderProjects(project, containerElement, headingLevel = 'h2') {
   containerElement.innerHTML = '';
   for (const p of project) {
