@@ -1,7 +1,7 @@
 [
     {
         "title": "Project 1 in DSC 106",
-        "image": "../images/Project 1.jpg",
+        "image": "../images/project1.jpg",
         "description": "A data visualization project exploring food processing scores and brand pricing, revealing that less processed does not mean cheaper.",
         "year": 2025
     },
@@ -20,7 +20,7 @@
     },
     {
         "title": "Project 3",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "image": "../images/Project 3.jpg",
         "description": "A statistical analysis of economic indicators across different regions and demographic groups.",
         "year": 2024
     },
