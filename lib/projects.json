@@ -1,7 +1,7 @@
 [
     {
         "title": "Project 1 in DSC 106",
-        "image": "../images/project1.jpg",
+        "image": "images/project1.jpg",
         "description": "A data visualization project exploring food processing scores and brand pricing, revealing that less processed does not mean cheaper.",
         "year": 2025
     },
@@ -13,61 +13,61 @@
         "year": 2025
     },
     {
-        "title": "Project 2",
-        "image": "../images/project2.jpg",
+        "title": "Project 3",
+        "image": "images/Project 3.jpg",
         "description": "An exploratory data analysis project examining trends in outdoor lifestyle and activity patterns.",
         "year": 2025
     },
     {
-        "title": "Project 3",
-        "image": "../images/Project 3.jpg",
-        "description": "A statistical analysis of economic indicators across different regions and demographic groups.",
-        "year": 2024
-    },
-    {
         "title": "Project 4",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "A machine learning model predicting housing prices using socioeconomic and geographic data.",
+        "description": "A statistical analysis of economic indicators across different regions and demographic groups.",
         "year": 2024
     },
     {
         "title": "Project 5",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "An analysis of social media sentiment trends around environmental and climate topics.",
+        "description": "A machine learning model predicting housing prices using socioeconomic and geographic data.",
         "year": 2024
     },
     {
         "title": "Project 6",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "A clustering analysis of consumer purchasing behavior patterns using k-means and hierarchical methods.",
+        "description": "An analysis of social media sentiment trends around environmental and climate topics.",
         "year": 2024
     },
     {
         "title": "Project 7",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Time series forecasting of stock market trends using ARIMA and regression models.",
-        "year": 2023
+        "description": "A clustering analysis of consumer purchasing behavior patterns using k-means and hierarchical methods.",
+        "year": 2024
     },
     {
         "title": "Project 8",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "A natural language processing analysis of news headlines examining framing and bias detection.",
+        "description": "Time series forecasting of stock market trends using ARIMA and regression models.",
         "year": 2023
     },
     {
         "title": "Project 9",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "An interactive dashboard visualizing public health outcomes across US counties over time.",
+        "description": "A natural language processing analysis of news headlines examining framing and bias detection.",
         "year": 2023
     },
     {
         "title": "Project 10",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "A recommendation system for academic papers built using collaborative filtering techniques.",
+        "description": "An interactive dashboard visualizing public health outcomes across US counties over time.",
         "year": 2023
     },
     {
         "title": "Project 11",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "A recommendation system for academic papers built using collaborative filtering techniques.",
+        "year": 2023
+    },
+    {
+        "title": "Project 12",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Exploratory analysis of climate data examining long-term temperature trends across decades.",
         "year": 2023

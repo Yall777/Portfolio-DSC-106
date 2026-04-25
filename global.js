@@ -4,7 +4,7 @@ function $$(selector, context = document) {
   return Array.from(context.querySelectorAll(selector));
 }
 
-const BASE_PATH = (location.hostname === "localhost" || location.hostname === "127.0.0.1")
+export const BASE_PATH = (location.hostname === "localhost" || location.hostname === "127.0.0.1")
   ? "/"
   : "/Portfolio-DSC-106/";
 
@@ -62,10 +62,11 @@ export async function fetchGithubData(username) {
 export function renderProjects(project, containerElement, headingLevel = 'h2') {
   containerElement.innerHTML = '';
   for (const p of project) {
+    const imgSrc = p.image.startsWith('http') ? p.image : BASE_PATH + p.image;
     const article = document.createElement('article');
     article.innerHTML = `
       <${headingLevel}>${p.title}</${headingLevel}>
-      <img src="${p.image}" alt="${p.title}">
+      <img src="${imgSrc}" alt="${p.title}">
       <p>${p.description}</p>
       ${p.year ? `<footer class="project-year">c. ${p.year}</footer>` : ''}
     `;
