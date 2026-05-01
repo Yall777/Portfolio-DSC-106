@@ -52,6 +52,50 @@ h1 {
   font-size: 400%;
 }
 
+/* Projects pie chart */
+.projects-viz {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  margin-block: 2em;
+}
+
+#projects-pie-plot {
+  max-width: 20em;
+  flex-shrink: 0;
+  overflow: visible;
+}
+
+.legend {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  font-size: 0.9em;
+}
+
+.legend li {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.legend .swatch {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border-radius: 0.2em;
+  background-color: var(--color);
+  flex-shrink: 0;
+}
+
+.legend em {
+  color: color-mix(in oklch, currentColor, transparent 40%);
+  font-style: normal;
+}
+
 /* Projects grid */
 .projects {
   display: grid;
