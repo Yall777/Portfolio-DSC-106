@@ -19,55 +19,55 @@
         "year": 2025
     },
     {
-        "title": "Project 4",
+        "title": "Regional Economic Trends",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "A statistical analysis of economic indicators across different regions and demographic groups.",
         "year": 2024
     },
     {
-        "title": "Project 5",
+        "title": "Housing Price Predictor",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "A machine learning model predicting housing prices using socioeconomic and geographic data.",
         "year": 2024
     },
     {
-        "title": "Project 6",
+        "title": "Climate Sentiment Analysis",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "An analysis of social media sentiment trends around environmental and climate topics.",
         "year": 2024
     },
     {
-        "title": "Project 7",
+        "title": "Consumer Behavior Clustering",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "A clustering analysis of consumer purchasing behavior patterns using k-means and hierarchical methods.",
         "year": 2024
     },
     {
-        "title": "Project 8",
+        "title": "Stock Market Forecasting",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Time series forecasting of stock market trends using ARIMA and regression models.",
         "year": 2023
     },
     {
-        "title": "Project 9",
+        "title": "News Bias Detector",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "A natural language processing analysis of news headlines examining framing and bias detection.",
         "year": 2023
     },
     {
-        "title": "Project 10",
+        "title": "Public Health Dashboard",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "An interactive dashboard visualizing public health outcomes across US counties over time.",
         "year": 2023
     },
     {
-        "title": "Project 11",
+        "title": "Academic Paper Recommender",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "A recommendation system for academic papers built using collaborative filtering techniques.",
         "year": 2023
     },
     {
-        "title": "Project 12",
+        "title": "Long-Term Climate Trends",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Exploratory analysis of climate data examining long-term temperature trends across decades.",
         "year": 2023

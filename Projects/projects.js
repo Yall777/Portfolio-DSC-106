@@ -15,13 +15,18 @@ const svg = d3.select('#projects-pie-plot');
 const legend = d3.select('#projects-legend');
 
 let query = '';
-let selectedIndex = -1;
+let selectedYear = null;  // persistent across both search and click
 
 function renderChart(filteredProjects) {
   const rolledData = d3.rollups(filteredProjects, v => v.length, d => d.year)
     .sort((a, b) => b[0] - a[0]);
   const pieData = rolledData.map(([year, count]) => ({ label: year, value: count }));
   const arcData = sliceGenerator(pieData);
+
+  // derive index from the persistent year each time we render
+  const selectedIndex = selectedYear !== null
+    ? pieData.findIndex(d => d.label === selectedYear)
+    : -1;
 
   svg.selectAll('path').remove();
   arcData.forEach((d, i) => {
@@ -32,13 +37,8 @@ function renderChart(filteredProjects) {
       .attr('stroke-width', 0.5)
       .classed('selected', i === selectedIndex)
       .on('click', () => {
-        selectedIndex = selectedIndex === i ? -1 : i;
-        svg.selectAll('path').classed('selected', (_, idx) => idx === selectedIndex);
-        legend.selectAll('li').classed('selected', (_, idx) => idx === selectedIndex);
-        const displayed = selectedIndex !== -1
-          ? filteredProjects.filter(p => p.year === pieData[selectedIndex].label)
-          : filteredProjects;
-        renderProjects(displayed, projectsContainer, 'h2');
+        selectedYear = selectedYear === pieData[i].label ? null : pieData[i].label;
+        applyFilters();
       });
   });
 
@@ -50,24 +50,23 @@ function renderChart(filteredProjects) {
       .classed('selected', i === selectedIndex)
       .html(`<span class="swatch"></span> ${d.label} <em>(${d.value})</em>`)
       .on('click', () => {
-        selectedIndex = selectedIndex === i ? -1 : i;
-        svg.selectAll('path').classed('selected', (_, idx) => idx === selectedIndex);
-        legend.selectAll('li').classed('selected', (_, idx) => idx === selectedIndex);
-        const displayed = selectedIndex !== -1
-          ? filteredProjects.filter(p => p.year === pieData[selectedIndex].label)
-          : filteredProjects;
-        renderProjects(displayed, projectsContainer, 'h2');
+        selectedYear = selectedYear === d.label ? null : d.label;
+        applyFilters();
       });
   });
 }
 
 function applyFilters() {
-  selectedIndex = -1;
   const searchFiltered = projects.filter((project) => {
     const values = Object.values(project).join('\n').toLowerCase();
     return values.includes(query.toLowerCase());
   });
-  renderProjects(searchFiltered, projectsContainer, 'h2');
+
+  const displayed = selectedYear !== null
+    ? searchFiltered.filter(p => p.year === selectedYear)
+    : searchFiltered;
+
+  renderProjects(displayed, projectsContainer, 'h2');
   renderChart(searchFiltered);
 }
 
