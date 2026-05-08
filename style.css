@@ -228,6 +228,10 @@ h1 {
   overflow-wrap: break-word;
 }
 
+#language-breakdown {
+  grid-template-columns: repeat(auto-fit, minmax(9em, 1fr));
+}
+
 .gridlines line {
   stroke: color-mix(in oklch, currentColor, transparent 85%);
   stroke-dasharray: 2 4;
