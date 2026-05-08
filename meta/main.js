@@ -119,6 +119,14 @@ function renderScatterPlot(data, commits) {
 
   gridlines.call(d3.axisLeft(yScale).tickFormat('').tickSize(-usableArea.width));
 
+  // Color each gridline by time of day
+  gridlines.selectAll('.tick line').style('stroke', (d) => {
+    if (d >= 6 && d < 12) return 'oklch(70% 0.15 75 / 50%)';  // morning - warm
+    if (d >= 12 && d < 18) return 'oklch(70% 0.15 55 / 50%)'; // afternoon - orange
+    if (d >= 18 && d < 22) return 'oklch(55% 0.15 280 / 50%)'; // evening - purple
+    return 'oklch(45% 0.15 260 / 50%)'; // night - dark blue
+  });
+
   svg
     .append('g')
     .attr('transform', `translate(0, ${usableArea.bottom})`)
