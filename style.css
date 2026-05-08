@@ -200,29 +200,41 @@ h1 {
 /* Meta stats */
 .stats {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(8em, 1fr));
-  gap: 0.5rem 0;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.25rem 1rem;
   margin: 1.5rem 0;
   padding: 1.5rem 2rem;
   border: 1px solid color-mix(in oklch, var(--color-accent), transparent 60%);
   border-radius: 0.75rem;
   background-color: color-mix(in oklch, var(--color-accent), canvas 92%);
+  overflow: hidden;
 }
 
 .stats dt {
   grid-row: 1;
-  font-size: 0.75em;
+  font-size: 0.7em;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: color-mix(in oklch, currentColor, transparent 40%);
+  align-self: end;
 }
 
 .stats dd {
   grid-row: 2;
-  font-size: 2.5em;
+  font-size: clamp(1rem, 2vw, 2rem);
   font-weight: bold;
   margin: 0;
   color: var(--color-accent);
+  overflow-wrap: break-word;
+}
+
+.gridlines line {
+  stroke: color-mix(in oklch, currentColor, transparent 85%);
+  stroke-dasharray: 2 4;
+}
+
+.gridlines path {
+  display: none;
 }
 
 /* Contact form */
