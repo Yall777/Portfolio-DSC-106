@@ -1,5 +1,12 @@
 [
     {
+        "title": "Bikewatching",
+        "image": "images/bikewatching.jpg",
+        "description": "An interactive map visualizing bike traffic patterns in the Boston area using Mapbox, showing station activity and trip flows.",
+        "url": "https://yall777.github.io/bikewatching/",
+        "year": 2025
+    },
+    {
         "title": "Project 1 in DSC 106",
         "image": "images/project1.jpg",
         "description": "A data visualization project exploring food processing scores and brand pricing, revealing that less processed does not mean cheaper.",
