@@ -286,6 +286,10 @@ circle {
   transition: 200ms;
   transform-origin: center;
   transform-box: fill-box;
+
+  @starting-style {
+    r: 0;
+  }
 }
 
 circle:hover {
@@ -349,4 +353,113 @@ textarea {
 
 button[type="submit"] {
   grid-column: 1 / -1;
+}
+
+/* Meta page — slider */
+#slider-container {
+  display: flex;
+  align-items: baseline;
+  gap: 1em;
+  margin-block: 1em;
+}
+
+#slider-container label {
+  display: flex;
+  align-items: center;
+  gap: 0.75em;
+  flex: 1;
+  grid-column: unset;
+  grid-template-columns: unset;
+}
+
+#slider-container input[type="range"] {
+  flex: 1;
+  width: auto;
+}
+
+#commit-time {
+  white-space: nowrap;
+  color: color-mix(in oklch, currentColor, transparent 30%);
+  font-size: 0.9em;
+}
+
+/* Scrollytelling layout */
+#scrolly {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+  margin-block: 2em;
+  position: relative;
+}
+
+#file-viz {
+  position: sticky;
+  top: 1em;
+  height: fit-content;
+  padding: 1em;
+  border: 1px solid color-mix(in oklch, var(--color-accent), transparent 70%);
+  border-radius: 0.5em;
+  background: color-mix(in oklch, var(--color-accent), canvas 95%);
+}
+
+.file-viz-list {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.75em 1em;
+  margin: 0;
+  align-items: center;
+}
+
+.file-viz-list dt {
+  font-size: 0.78em;
+  line-height: 1.3;
+}
+
+.file-viz-list dt code {
+  word-break: break-all;
+}
+
+.file-viz-list dt small {
+  color: color-mix(in oklch, currentColor, transparent 40%);
+}
+
+.file-viz-list dd {
+  margin: 0;
+}
+
+.file-dots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  align-items: center;
+}
+
+.file-dot {
+  display: inline-block;
+  width: 0.6em;
+  height: 0.6em;
+  border-radius: 50%;
+  opacity: 0.85;
+}
+
+/* Narrative items */
+.narrative-item {
+  padding: 0.75em 1em;
+  margin-bottom: 0.75em;
+  border-left: 3px solid color-mix(in oklch, var(--color-accent), transparent 50%);
+  transition: border-color 200ms;
+}
+
+.narrative-item:hover {
+  border-left-color: var(--color-accent);
+}
+
+.narrative-item p {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 0.95em;
+}
+
+.narrative-item a {
+  color: var(--color-accent);
 }
